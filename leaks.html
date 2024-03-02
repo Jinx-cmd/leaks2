@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaks</title>
+    <script src="check.js"></script>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        /* Additional CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhf00RvncsgU-yNc7kFioNwwhqUCBOOa961xy1LfcjPw&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        nav a:first-child {
+            margin-left: 0;
+        }
+        nav a:last-child {
+            margin-right: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-container img {
+            margin: 10px;
+            max-width: 200px; /* Set maximum width for the images */
+            height: auto; /* Ensure aspect ratio is maintained */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="welcome.html">BACK TO HOME</a>
+        <a href="leaks.html">LEAKS</a>
+        <a href="pictures.html">PICTURES</a>
+        <a href="videos.html">Videos</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to the Leaks!</h1>
+        <div id="passwordForm">
+            <h2>Please enter the password to access this page:</h2>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+
+        <div id="content" style="display: none;">
+            <div class="image-container">
+                <img src="you.png" alt="1">
+                <img src="you2.png" alt="2">
+                <img src="you3.png" alt="3">
+                <img src="you4.png" alt="4">
+                <img src="you5.png" alt="5">
+                <img src="you6.png" alt="6">
+                <img src="you7.png" alt="7">
+                <img src="you8.png" alt="8">
+                <img src="you9.png" alt="9">
+                <img src="you18.png" alt="10">
+                <img src="you23.png" alt="11">
+                <img src="you24.png" alt="12">
+                <img src="you25.png" alt="13">
+                <img src="you26.png" alt="14">
+                <img src="you13.png" alt="17">
+                <img src="you29.png" alt="18">
+                <img src="you42.png" alt="18">
+                <img src="you43.png" alt="20">
+                <img src="you44.png" alt="21">
+                <img src="you45.png" alt="22">
+                <img src="you46.png" alt="23">
+                <img src="you47.png" alt="24">
+                <img src="you48.png" alt="25">
+                <img src="you49.png" alt="26">
+                <img src="you50.png" alt="27">
+            </div>
+        </div>
+<script>
+    // Load password check script dynamically
+    var script = document.createElement('script');
+        script.src = 'password_check.js';
+        document.head.appendChild(script);
+</script>
+</body>
+</html>
